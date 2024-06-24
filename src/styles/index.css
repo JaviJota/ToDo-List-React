@@ -10,3 +10,60 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body {
+    margin-top: 60px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container h1,
+  ul {
+    min-width: 900px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .container ul {
+    margin-top: 25px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ul li {
+    border: 1px solid grey;
+    list-style: none;
+    max-width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    min-width: 900px;
+    display: flex;
+    align-items: center;
+  }
+  
+  ul li svg {
+    margin-left: auto;
+    margin-right: 5px;
+    align-items: baseline;
+    display: none;
+  }
+  
+  ul li:hover svg {
+    display: block;
+    cursor: pointer;
+  }
+  
+  ul li input {
+    outline: 0;
+    border: none;
+    min-width: 850px;
+    max-width: 90%;
+  }
